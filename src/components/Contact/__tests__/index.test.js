@@ -6,10 +6,10 @@ import Contact from '..'
 
 afterEach(cleanup)
 
-describe('Contact component renders', () => {
+describe('Contact component', () => {
   it('renders', () => {
-  render(<Contact />);
-});
+    render(<Contact />);
+  });
 
   it('renders', () => {
     const { asFragment } = render(<Contact />)
@@ -22,7 +22,7 @@ it('renders', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
 })
- 
+
 it('renders', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('button')).toHaveTextContent('Submit')
